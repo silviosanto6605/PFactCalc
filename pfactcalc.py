@@ -23,3 +23,4 @@ while number>=divisor:
         divisor=divisor+1
 
     print(fattore)
+    time.sleep(2)
