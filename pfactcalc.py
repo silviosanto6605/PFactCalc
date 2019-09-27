@@ -22,5 +22,7 @@ while number>=divisor:
     else:
         divisor=divisor+1
 
+
+if number <=divisor:
     print(fattore)
-    time.sleep(2)
+    exit()
