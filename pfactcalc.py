@@ -15,8 +15,8 @@ window.title("PFactCalc 0.1.0")
 
 window.geometry('350x200')
 
-labeltitle = Label(window, text="PFactCalc 0.1.0", font=("Impact",30), justify=CENTER)
-labeltitle.configure(background='white')
+labeltitle = Label(window, text="PFactCalc 0.1.0", font=("Calibri Light",25), justify=CENTER)
+labeltitle.configure(background='cyan')
 labeltitle.grid(column=2, row=1) #titolo 
 
 txt = Entry(window,width=15)
@@ -25,7 +25,7 @@ txt.grid(column=2, row=5) #input
 def outputtext(fattore):
     output = Label(window, text=fattore, font=("Arial",12), justify=RIGHT, width=30)
     output.grid(column=2, row=6) #output
-    output.configure(background='white')    
+    output.configure(background='cyan')    
 
 def start_factorization():
     number = int(txt.get())
@@ -53,10 +53,10 @@ def start_factorization():
 
 
 btn = Button(window, text="Calculate", font=("Calibri",15), command=start_factorization)
-btn.configure(background='white')
+btn.configure(background='cyan')
 btn.grid(column=2, row=3)
 
-window.configure(background='white')
+window.configure(background='cyan')
 #window.wm_iconbitmap('pfactcalc.png')
 
 
