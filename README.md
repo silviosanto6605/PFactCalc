@@ -1,2 +1,4 @@
-# mcm-mcd
-Calcolatore MCD e mcm
+PFactCalc
+=========
+
+_Scompositore in fattori primi_
