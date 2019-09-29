@@ -17,6 +17,9 @@ window.geometry('350x200')
 
 labeltitle = Label(window, text="PFactCalc 0.1.0", font=("Calibri Light",25), justify=CENTER)
 labeltitle.configure(background='cyan')
+sloganlabel = Label(window, text="Scrivi un numero e questo verrà scomposto in fattori primi", font=("Arial",10), justify=CENTER)
+sloganlabel.grid(column=2, row=2)
+sloganlabel.configure(background='cyan')
 labeltitle.grid(column=2, row=1) #titolo 
 
 txt = Entry(window,width=15)
