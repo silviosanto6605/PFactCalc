@@ -6,24 +6,35 @@ import os
 import subprocess
 import time
 
+try:
+
+    number = int(input("Inserici il numero da scomporre in fattori primi: "))
+
+    fattore = str(number)+"=1"
+    divisor=2
 
 
-number = int(input("Inserici il numero da scomporre in fattori primi: "))
+    while number>=divisor:
+        if number % divisor == 0:
+            fattore=fattore+'*'+str(divisor)
+            number=number/divisor
 
-fattore = str(number)+"=1"
-divisor=2
-
-
-while number>=divisor:
-    if number % divisor == 0:
-        fattore=fattore+'*'+str(divisor)
-        number=number/divisor
-
-    else:
-        divisor=divisor+1
+        else:
+            divisor=divisor+1
 
 
-if number <=divisor:
-    print(fattore)
-    input("Press enter to exit  ")
+    if number <=divisor:
+        print(fattore)
+        input("Press enter to exit  ")
+        exit()
+
+except KeyboardInterrupt:
+    print('Exiting...')
+    exit()
+
+except SyntaxError:
+    print("Il valore inserito non e' corretto")
+    exit()
+except NameError:
+    print("Il valore inserito non e' corretto")
     exit()
