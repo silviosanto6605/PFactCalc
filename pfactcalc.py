@@ -61,3 +61,4 @@ window.configure(background='cyan')
 
 
 window.mainloop()
+window.resizable(False,False)
