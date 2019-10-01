@@ -32,9 +32,6 @@ except KeyboardInterrupt:
     print('Exiting...')
     exit()
 
-except SyntaxError:
-    print("Il valore inserito non e' corretto")
-    exit()
-except NameError:
+except (SyntaxError, NameError,ValueError):
     print("Il valore inserito non e' corretto")
     exit()
