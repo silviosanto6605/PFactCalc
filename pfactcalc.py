@@ -12,7 +12,6 @@ import time
 window = Tk()
 
 window.title("PFactCalc 0.1.0")
-
 window.geometry('350x200')
 
 labeltitle = Label(window, text="PFactCalc 0.1.0", font=("Calibri Light",25), justify=CENTER)
@@ -59,6 +58,5 @@ btn.grid(column=2, row=3)
 window.configure(background='cyan')
 #window.wm_iconbitmap('pfactcalc.png')
 
-
+window.resizable(0, 0)
 window.mainloop()
-window.resizable(False,False)
