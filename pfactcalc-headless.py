@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#pfactcalc-headless
 
 import random
 import math
