@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-#pfactcalc-headless
-
+#pfactcalc-headless.py 0.1.0
 
 import random
 import os
