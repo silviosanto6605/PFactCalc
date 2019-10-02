@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 #pfactcalc-headless
 
+
 import random
-import math
 import os
 import subprocess
 import time
