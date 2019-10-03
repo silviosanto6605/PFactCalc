@@ -25,7 +25,6 @@ try:
 
     if number <=divisor:
         print(fattore)
-        input("Press enter to exit  ")
         exit()
 
 except KeyboardInterrupt:
