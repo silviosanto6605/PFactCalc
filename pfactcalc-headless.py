@@ -28,9 +28,8 @@ try:
         exit()
 
 except KeyboardInterrupt:
-    print('Exiting...')
+    print('\nExiting...')
     exit()
-
 except (SyntaxError, NameError,ValueError):
     print("Il valore inserito non e' corretto")
     subprocess.call(["python3 pfactcalc-headless.py"], shell=True)
